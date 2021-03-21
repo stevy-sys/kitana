@@ -12,6 +12,4 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/css/style.scss', 'public/css')
-    .sass('resources/css/nivo-slider-theme.scss', 'public/css')
-    .sass('resources/css/responsive.scss', 'public/css');
+    .sass('resources/sass/app.scss', 'public/css');

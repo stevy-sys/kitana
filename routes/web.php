@@ -22,3 +22,8 @@ Route::get('/contact','IndexController@contact')->name('contact');
 Route::get('/portfolio','IndexController@portfolio')->name('portfolio');
 Route::get('/team','IndexController@team')->name('team');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('couverture', 'CouvertureController');

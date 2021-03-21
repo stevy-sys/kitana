@@ -86,39 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/css/nivo-slider-theme.scss":
-/*!**********************************************!*\
-  !*** ./resources/css/nivo-slider-theme.scss ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ "./resources/css/responsive.scss":
-/*!***************************************!*\
-  !*** ./resources/css/responsive.scss ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ "./resources/css/style.scss":
-/*!**********************************!*\
-  !*** ./resources/css/style.scss ***!
-  \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -350,17 +317,26 @@ __webpack_require__(/*! ./main */ "./resources/js/main.js");
 
 /***/ }),
 
+/***/ "./resources/sass/app.scss":
+/*!*********************************!*\
+  !*** ./resources/sass/app.scss ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!*************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/css/style.scss ./resources/css/nivo-slider-theme.scss ./resources/css/responsive.scss ***!
-  \*************************************************************************************************************************************/
+/*!*************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\laragon\www\kitana\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! C:\laragon\www\kitana\resources\css\style.scss */"./resources/css/style.scss");
-__webpack_require__(/*! C:\laragon\www\kitana\resources\css\nivo-slider-theme.scss */"./resources/css/nivo-slider-theme.scss");
-module.exports = __webpack_require__(/*! C:\laragon\www\kitana\resources\css\responsive.scss */"./resources/css/responsive.scss");
+module.exports = __webpack_require__(/*! C:\laragon\www\kitana\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
