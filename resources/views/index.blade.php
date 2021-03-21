@@ -43,7 +43,9 @@
   @include('partials/_menu')
   <!-- End Menu Area -->
 
+  @yield('content')
 
+  {{--
   <!-- Start slider couverture Area -->
   @include('partials/_couverture')
   <!-- End slider couverture area -->
@@ -103,10 +105,10 @@
   @include('partials/_contact')
   <!-- contact end team Area -->
 
+  --}}
   <!-- Start Footer Area -->
   @include('partials/_footer')
   <!-- End Footer Area -->
-
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <!-- JavaScript Libraries -->

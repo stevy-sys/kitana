@@ -1,4 +1,7 @@
-<!-- Start About area -->
+@extends('index')
+
+@section('content')
+    <!-- Start About area -->
   <div id="about" class="about-area area-padding">
     <div class="container">
       <div class="row">
@@ -54,3 +57,5 @@
     </div>
   </div>
   <!-- End About area -->
+
+@endsection

@@ -1,4 +1,7 @@
-<!-- Start Blog Area -->
+@extends('index')
+
+@section('content')
+    <!-- Start Blog Area -->
   <div id="blog" class="blog-area">
     <div class="blog-inner area-padding">
       <div class="blog-overly"></div>
@@ -111,3 +114,4 @@
     </div>
   </div>
   <!-- End Blog -->
+@endsection

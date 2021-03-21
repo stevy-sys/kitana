@@ -1,4 +1,7 @@
-<!-- our-skill-area start -->
+@extends('index')
+
+@section('content')
+    <!-- our-skill-area start -->
   <div class="our-skill-area fix hidden-sm">
     <div class="test-overly"></div>
     <div class="skill-bg area-padding-2">
@@ -52,3 +55,4 @@
     </div>
   </div>
   <!-- our-skill-area end -->
+@endsection

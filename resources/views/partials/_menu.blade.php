@@ -4,7 +4,6 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-sm-12">
-
             <!-- Navigation -->
             <nav class="navbar navbar-default">
               <!-- Brand and toggle get grouped for better mobile display -->
@@ -16,7 +15,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- Brand -->
-                <a class="navbar-brand page-scroll sticky-logo" href="index.html">
+                <a class="navbar-brand page-scroll sticky-logo" href="{{route('accueil')}}">
                   <h1><span>e</span>Business</h1>
                   <!-- Uncomment below if you prefer to use an image logo -->
                   <!-- <img src="img/logo.png" alt="" title=""> -->
@@ -26,19 +25,19 @@
               <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
                 <ul class="nav navbar-nav navbar-right">
                   <li class="active">
-                    <a class="page-scroll" href="#home">Home</a>
+                    <a class="page-scroll" href="{{route('accueil')}}">Home</a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="#about">About</a>
+                    <a class="page-scroll" href="{{route('about')}}">About</a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="#services">Services</a>
+                    <a class="page-scroll" href="{{route('service')}}">Services</a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="#team">Team</a>
+                    <a class="page-scroll" href="{{route('team')}}">Team</a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    <a class="page-scroll" href="{{route('portfolio')}}">Portfolio</a>
                   </li>
 
                   <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Drop Down<span class="caret"></span></a>
@@ -49,10 +48,10 @@
                   </li>
 
                   <li>
-                    <a class="page-scroll" href="#blog">Blog</a>
+                    <a class="page-scroll" href="{{ route('blog') }}">Blog</a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
+                    <a class="page-scroll" href="{{route('contact')}}">Contact</a>
                   </li>
                 </ul>
               </div>

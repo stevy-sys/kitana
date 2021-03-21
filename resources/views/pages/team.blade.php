@@ -1,4 +1,7 @@
-<!-- Start team Area -->
+@extends('index')
+
+@section('content')
+    <!-- Start team Area -->
   <div id="team" class="our-team-area area-padding">
     <div class="container">
       <div class="row">
@@ -147,3 +150,4 @@
     </div>
   </div>
   <!-- End Team Area -->
+@endsection

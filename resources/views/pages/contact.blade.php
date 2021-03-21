@@ -1,4 +1,7 @@
-<!-- Start contact Area -->
+@extends('index')
+
+@section('content')
+    <!-- Start contact Area -->
   <div id="contact" class="contact-area">
     <div class="contact-inner area-padding">
       <div class="contact-overly"></div>
@@ -90,3 +93,4 @@
     </div>
   </div>
   <!-- End Contact Area -->
+@endsection

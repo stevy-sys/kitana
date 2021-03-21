@@ -1,4 +1,7 @@
-<!-- Start portfolio Area -->
+@extends('index')
+
+@section('content')
+    <!-- Start portfolio Area -->
   <div id="portfolio" class="portfolio-area area-padding fix">
     <div class="container">
       <div class="row">
@@ -138,3 +141,4 @@
     </div>
   </div>
   <!-- awesome-portfolio end -->
+@endsection

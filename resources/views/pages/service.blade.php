@@ -1,4 +1,7 @@
-<!-- Start Service area -->
+@extends('index')
+
+@section('content')
+  <!-- Start Service area -->
   <div id="services" class="services-area area-padding">
     <div class="container">
       <div class="row">
@@ -118,3 +121,4 @@
     </div>
   </div>
   <!-- End Service area -->
+@endsection
