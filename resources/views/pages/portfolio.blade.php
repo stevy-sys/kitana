@@ -34,6 +34,27 @@
           </div>
         </div>
         <div class="awesome-project-content">
+
+          @foreach ($portfolios as $portfolio)
+               <!-- single-awesome-project start -->
+                <div class="col-md-4 col-sm-4 col-xs-12 design {{$portfolio->categorie}}">
+                  <div class="single-awesome-project">
+                    <div class="awesome-img">
+                      <a href="#"><img src="{{asset('storage').'/'.$portfolio->image}}" alt="" /></a>
+                      <div class="add-actions text-center">
+                        <div class="project-dec">
+                          <a class="venobox" data-gall="myGallery" href="{{asset('storage').'/'.$portfolio->image}}">
+                            <h4>{{$portfolio->titre}}</h4>
+                            <span>{{$portfolio->description}}</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- single-awesome-project end -->
+          @endforeach
+          {{--
           <!-- single-awesome-project start -->
           <div class="col-md-4 col-sm-4 col-xs-12 design development">
             <div class="single-awesome-project">
@@ -137,6 +158,7 @@
           </div>
           <!-- single-awesome-project end -->
         </div>
+        --}}
       </div>
     </div>
   </div>

@@ -2,13 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Team;
+use App\Service;
+use App\Portfolio;
+use App\Couverture;
 use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
     public function couverture()
     {
-        return view('pages.couverture');
+        $couvertures = Couverture::all();
+        return view('pages.couverture',compact('couvertures'));
     }
 
     public function about()
@@ -18,17 +23,20 @@ class IndexController extends Controller
 
     public function service()
     {
-        return view('pages.service');
+        $services = Service::all();
+        return view('pages.service',compact('services'));
     }
 
     public function portfolio()
     {
-        return view('pages.portfolio');
+        $portfolios = Portfolio::all();
+        return view('pages.portfolio',compact('portfolios'));
     }
 
     public function team()
     {
-        return view('pages.team');
+        $teams = Team::all();
+        return view('pages.team',compact('teams'));
     }
 
     public function contact()

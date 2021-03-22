@@ -13,6 +13,42 @@
       </div>
       <div class="row">
         <div class="team-top">
+
+          @foreach ($teams as $team)
+              <div class="col-md-3 col-sm-3 col-xs-12">
+              <div class="single-team-member">
+                <div class="team-img">
+                  <a href="#">
+                      <img src="{{ asset('storage').'/'.$team->image }}" alt="">
+                    </a>
+                  <div class="team-social-icon text-center">
+                    <ul>
+                      <li>
+                        <a href="{{$team->facebook}}">
+                            <i class="fa fa-facebook"></i>
+                          </a>
+                      </li>
+                      <li>
+                        <a href="{{$team->twitter}}">
+                            <i class="fa fa-twitter"></i>
+                          </a>
+                      </li>
+                      <li>
+                        <a href="{{$team->instagrame}}">
+                            <i class="fa fa-instagram"></i>
+                          </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="team-content text-center">
+                  <h4>{{$team->nom}}</h4>
+                  <p>{{$team->role}}</p>
+                </div>
+              </div>
+            </div>
+          @endforeach
+          {{--
           <div class="col-md-3 col-sm-3 col-xs-12">
             <div class="single-team-member">
               <div class="team-img">
@@ -45,6 +81,10 @@
               </div>
             </div>
           </div>
+
+
+
+
           <!-- End column -->
           <div class="col-md-3 col-sm-3 col-xs-12">
             <div class="single-team-member">
@@ -147,6 +187,7 @@
           <!-- End column -->
         </div>
       </div>
+      --}}
     </div>
   </div>
   <!-- End Team Area -->

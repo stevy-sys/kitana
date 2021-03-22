@@ -42,7 +42,7 @@
   <!-- Start Menu Area -->
   @include('partials/_menu')
   <!-- End Menu Area -->
-
+  
   @yield('content')
 
   {{--

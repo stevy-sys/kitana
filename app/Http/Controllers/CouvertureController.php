@@ -50,7 +50,7 @@ class CouvertureController extends Controller
             'image' => "image|required"
         ]);
 
-        $couverture =  Couverture::create($data);
+        $couverture = Couverture::create($data);
         $this->storeImage($couverture);
 
         return redirect()->route('couverture.index');

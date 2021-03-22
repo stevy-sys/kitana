@@ -13,6 +13,30 @@
       </div>
       <div class="row text-center">
         <div class="services-contents">
+
+          @foreach ($services as $service)
+              <!-- Start Left services -->
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="about-move">
+                  <div class="services-details">
+                    <div class="single-services">
+                      <a class="services-icon" href="#">
+                          <i class="fa {{$service->icon}}"></i>
+                        </a>
+                      <h4>{{$service->titre}}</h4>
+                      <p>
+                        {{$service->content}}
+                      </p>
+                    </div>
+                  </div>
+                  <!-- end about-details -->
+                </div>
+              </div>
+          @endforeach
+
+              {{--
+
+
           <!-- Start Left services -->
           <div class="col-md-4 col-sm-4 col-xs-12">
             <div class="about-move">
@@ -30,6 +54,10 @@
               <!-- end about-details -->
             </div>
           </div>
+
+
+
+
           <div class="col-md-4 col-sm-4 col-xs-12">
             <div class="about-move">
               <div class="services-details">
@@ -116,6 +144,7 @@
               <!-- end about-details -->
             </div>
           </div>
+          --}}
         </div>
       </div>
     </div>
